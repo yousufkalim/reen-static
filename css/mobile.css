@@ -1,0 +1,109 @@
+@media screen and (max-width: 750px){
+    .topbar{
+        display:none;
+    }
+    /*Header*/
+    .header {
+        width: 100%;
+        padding: 35px 20%;
+        text-align: center;
+        font-family: "sansbold";
+        position: static;
+        font-size: 15px;
+        background-color: white;
+        -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        -khtml-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+      }
+      
+      .navbar li {
+        list-style: none;
+        display: inline-block;
+        padding: 0px 10px;
+      }
+      
+      .navbar li a {
+        text-decoration: none;
+        color: black;
+      }
+
+      .navbar{
+          display: none;
+      }
+      /*Designer*/
+      .designer h1{
+          font-size: 40px;
+      }
+
+      .designer-text h2{
+          font-size: 20px;
+          padding-top: 25px;
+      }
+      /*Clean Section*/
+      .clean h1{
+          font-size: 30px;
+      }
+      .clean-discription{
+          font-size: 20px;
+      }
+      
+      .clean-col{
+          width: 100%;
+          padding: 25px 0;
+      }
+
+      /*work section*/
+
+      .work h1{
+          font-size: 30px;
+      }
+      .work-discription{
+          font-size: 20px;
+      }
+      .work-col{
+          width: 100%;
+      }
+      .work-col figure figcaption{
+          font-size: 16px;
+
+      }
+      /*Partner Section*/
+      .partner{
+          font-size: 30px;
+      }
+      .partner-discription{
+          font-size: 18px;
+      }
+      /*Footer Section*/
+      .footer-col{
+          width: 100%;
+          padding: 30px 0;
+      }
+      .footer-container hr{
+          display: block;
+      }
+      /*Footer Bar*/
+      .footernav{
+          display: none;
+      }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px){
+    .topbar{
+        display: none;
+    }
+    .footer-col{
+        width: 50%;
+    }
+    .footernav{
+        display: none;
+    }
+    .tab-col{
+        padding-bottom: 60px;
+    }
+}

@@ -1,0 +1,437 @@
+/* CSS Document */
+
+/*Fonts*/
+
+@font-face {
+  font-family: "latoblack";
+  src: url("fonts/lato.black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "latobold";
+  src: url("fonts/lato.bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sansreg";
+  src: url("fonts/source-sans-pro.regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sansbold";
+  src: url("fonts/source-sans-pro.bold.ttf") format("truetype");
+}
+
+/*Main*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*Topbar*/
+
+.topbar {
+  width: 100%;
+  background-color: #f5f7fa;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-family: "sansreg";
+  font-size: 12px;
+}
+
+.topbar-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+.topbar-wrapper::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.topbar-col {
+  width: 50%;
+  float: left;
+}
+
+.top-col {
+  padding: 0px 0px 0px 20px;
+}
+
+.topbar-col2 {
+  text-align: right;
+}
+
+/*Header Secttion*/
+
+.header {
+  width: 100%;
+  padding: 35px 20%;
+  text-align: center;
+  font-family: "sansbold";
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Designer Section*/
+
+.designer {
+  width: 100%;
+  padding: 295px 0px;
+  background-image: url(images/designerbg.png);
+  text-align: center;
+  background-size: cover;
+}
+
+.designer h1 {
+  font-family: "latoblack";
+  font-size: 80px;
+  color: white;
+}
+
+.designer h2 {
+  color: #a3b1bf;
+  font-family: "sansreg";
+}
+
+.designer-btn button {
+  padding: 25px 70px;
+  background-color: #00bc9c;
+  border: none;
+  border-bottom: 3px solid #00a085;
+  border-radius: 5px;
+  color: white;
+  font-family: "sansbold";
+  font-size: 18px;
+}
+
+.designer-btn {
+  margin-top: 60px;
+}
+
+/*Clean Section*/
+
+.clean {
+  width: 100%;
+  padding: 120px 0px;
+  text-align: center;
+  font-family: "sansreg";
+}
+
+.clean h1 {
+  font-family: "latobold";
+  font-size: 44px;
+  color: #506a85;
+}
+
+.clean-discription {
+  font-size: 22px;
+  color: #73879c;
+  padding: 30px 0px 75px 0px;
+}
+
+.clean-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+.clean-wrapper::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.clean-col {
+  float: left;
+  width: 33.33%;
+}
+
+.clean-col::after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+.clean-icons {
+  float: left;
+}
+
+.clean-col span {
+  font-family: "latobold";
+  font-size: 26px;
+  display: inline-block;
+  padding-bottom: 30px;
+  color: #506a85;
+}
+
+.clean-content {
+  float: left;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 30px;
+  color: #73879c;
+}
+
+/*Work Section*/
+
+.work {
+  width: 100%;
+  text-align: center;
+  padding: 125px 0;
+  background-color: #f2f5f7;
+  font-family: "sansreg";
+}
+
+.work h1 {
+  font-family: "latobold";
+  font-size: 40px;
+  color: #506a85;
+}
+
+.work-discription {
+  font-size: 22px;
+  color: #73879c;
+  padding-top: 35px;
+  padding-bottom: 70px;
+}
+
+.work-container {
+  width: 60%;
+  margin: auto;
+}
+
+.work-container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.work-col {
+  float: left;
+  width: 50%;
+  padding-bottom: 75px;
+}
+
+.work-col img {
+  width: 95%;
+}
+
+.work-col figure figcaption {
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  height: 100px;
+  padding: 25px 0px;
+  font-family: "latobold";
+  font-size: 20px;
+  color: #506a85;
+  margin-top: -3px;
+}
+
+small {
+  font-family: "sansreg";
+  font-size: 14px;
+}
+
+/*Work Carousel*/
+
+.cr-container {
+  width: 60%;
+  margin: auto;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dots button {
+  display: inline-block;
+  border: 7.5px solid #506a85 !important;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.owl-dots button.active {
+  border-color: #00bc9c !important;
+}
+
+/*Partner Section*/
+
+.partner {
+  font-family: "sansreg";
+  text-align: center;
+  margin: 120px 0;
+}
+
+.partner h1 {
+  font-family: "latobold";
+  font-size: 44px;
+  color: #506a85;
+}
+
+.partner-discription {
+  padding: 40px 0px;
+  font-size: 20px;
+  color: #73879c;
+}
+
+.partner-btn button {
+  padding: 20px 30px;
+  background-color: #00bc9c;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-family: "sansbold";
+  font-size: 15px;
+}
+
+/*Footer Section*/
+
+.footer {
+  padding: 60px 0;
+  background-color: #2f4052;
+  color: white;
+  font-family: "sansreg";
+}
+
+.footer-container {
+  width: 70%;
+  margin: auto;
+}
+
+.footer-container::after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.footer-heading {
+  font-family: "latobold";
+  text-transform: uppercase;
+}
+
+.footer-heading2 {
+  padding-bottom: 6px;
+}
+
+.footer-col {
+  width: 25%;
+  margin: auto;
+  float: left;
+  padding-left: 10px;
+}
+
+.footer-text {
+  color: #a3b1bf;
+  font-size: 14px;
+}
+
+.footer-text1 {
+  padding-top: 20px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #a3b1bf;
+  font-family: "latobold";
+  font-size: 15px;
+}
+
+.footer-col3 input {
+  width: 270px;
+  height: 40px;
+  background-color: #4e5c6c;
+  border: none;
+  border-radius: 5px;
+  font-family: "sansreg";
+  font-size: 13px;
+  padding-left: 15px;
+}
+
+.footer-col3 button {
+  width: 90px;
+  height: 30px;
+  background-color: #00bc9c;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #00a085;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 13px;
+  font-family: "sansbold";
+  color: white;
+}
+
+.footer-email {
+  position: relative;
+  width: 270px;
+  height: 40px;
+}
+
+.footer-container hr{
+  display: none;
+}
+
+/*Footer Bar*/
+
+.footerbar {
+  padding: 10px 2% 10px 15%;
+  background-color: #283645;
+  color: #707e8c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footernav {
+  list-style: none;
+  position: relative;
+  top: 8px;
+}
+
+.footernav li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footernav a {
+  color: #707e8c;
+}
+
+.gotobtn {
+  padding: 10px 15px;
+  color: white;
+  background-color: #3c5065;
+}
+
+.footer-dot {
+  font-size: 0.4rem;
+  position: relative;
+  top: -1px;
+}
